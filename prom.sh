@@ -35,7 +35,7 @@
   mv prometheus.service /etc/systemd/system/
   mv prometheus.yml ../prometheus-2.46.0.linux-amd64
 
-#add the services to systemctl
+#start both services
  systemctl daemon-reload
  systemctl start prometheus.service
  systemctl start node_exporter.service
